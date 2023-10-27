@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/SImg"
+                android:layout_width="115dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/food1"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/FoodStyle"
+                >
+
+            </com.google.android.material.imageview.ShapeableImageView>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="31dp"
+                android:layout_height="15dp"
+                android:text="10% Off"
+                android:textColor="@color/white"
+                android:textSize="7sp"
+                android:gravity="center"
+                android:background="@drawable/search_bg_discount"
+                >
+
+            </TextView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:padding="2dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/SFName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cheese Corn Pizza"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:padding="1dp"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/SExtraF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Extra Cheese Corn"
+                    android:textSize="12sp"
+                    android:textColor="#8B000000"
+                    android:padding="1dp"
+                    android:layout_marginLeft="10dp"
+                    >
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        android:id="@+id/SRating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.5"
+                        android:textStyle="bold"
+                        android:textSize="10sp"
+                        android:textColor="@color/black"
+                        android:padding="1dp"
+                        android:layout_marginLeft="10dp"
+                        >
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/star_icon"
+                        android:layout_marginLeft="5dp"
+                        >
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(25+)"
+                        android:textSize="8sp"
+                        android:textColor="#8B000000"
+                        android:padding="1dp"
+                        android:layout_marginLeft="10dp"
+                        >
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/veg"
+                        android:layout_marginLeft="5dp"
+                        >
+
+                    </ImageView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/AddBtn"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    >
+                    <TextView
+                        android:id="@+id/SFPrice"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Rs 199"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textSize="15sp"
+                        android:textColor="#E32020"
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:layout_weight="2"
+                        >
+
+                    </TextView>
+
+                    <TextView
+                      android:layout_marginRight="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:paddingHorizontal="10dp"
+                        android:layout_weight="1"
+                        android:text="+ Add"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:background="@drawable/bg_checkout_btn"
+                        >
+
+                    </TextView>
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

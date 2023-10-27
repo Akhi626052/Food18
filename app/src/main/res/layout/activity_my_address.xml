@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".activities.MyAddress">
+
+    <include
+        android:id="@+id/Header"
+        layout="@layout/custom_toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/LnBgMyAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="10dp"
+            android:id="@+id/RvMyAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            />
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="10dp"
+        android:id="@+id/Btn_Add_New_Address"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:paddingHorizontal="50dp"
+        android:textSize="18sp"
+        android:layout_height="50dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_medium"
+        android:background="@drawable/bg_checkout_btn"
+        android:text="Add New Address"
+        >
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+
+</LinearLayout>

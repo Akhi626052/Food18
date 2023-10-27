@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.OrderDetails">
+
+    <include
+        android:id="@+id/Header"
+        layout="@layout/custom_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/Ln_Status"
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/yellow"
+                android:orientation="vertical"
+                android:elevation="4dp"
+                android:background="@drawable/my_order_shape"
+                >
+
+                <RelativeLayout
+                    android:padding="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+
+                    >
+                    <LinearLayout
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+
+                        >
+                        <TextView
+                            android:id="@+id/order_Id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Order ID: 5678904"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:textColor="@color/black"
+                            >
+                        </TextView>
+                        <TextView
+                            android:layout_marginTop="2dp"
+                            android:id="@+id/order_Date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="25 June ,2023 at 10:10 AM"
+                            android:textSize="8sp"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textColor="@color/black"
+                            >
+                        </TextView>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/Coming_From"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Upcoming"
+                        android:textColor="@color/black"
+
+
+                        >
+
+                    </TextView>
+
+                </RelativeLayout>
+
+
+
+                <LinearLayout
+                    android:padding="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/my_order_shape"
+                    >
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/logo2"
+                        >
+
+                    </ImageView>
+
+                    <LinearLayout
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:singleLine="true"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Foods 18"
+                            >
+
+                        </TextView>
+                        <TextView
+                            android:id="@+id/order_Add"
+                            android:layout_marginTop="1dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/lightGray"
+                            android:textSize="12sp"
+                            android:singleLine="true"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="Skye,Earth Corporate Park,Ab Road , 605 ,Indore"
+                            >
+
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+          <androidx.recyclerview.widget.RecyclerView
+              android:layout_marginTop="5dp"
+              android:id="@+id/RvOrderDetailsItm"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              >
+
+          </androidx.recyclerview.widget.RecyclerView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="1dp"
+                >
+             <LinearLayout
+                 android:paddingVertical="10dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              >
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:text="Delivery Address"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="16sp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/Order_Address"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/lightGray"
+                    android:text="Skye Earth Corporate Park, 605, AB Road, Indore, Madhya Pradesh 452010                                                                              +91 9123 456 789"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textSize="14sp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+         </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:text="Order Summary"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="16sp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:text="Sub Total"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+               android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:text="Rs . 388"
+                   android:fontFamily="@font/roboto_medium"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_marginTop="2dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:text="Tax and Fees"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                   android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:text="Rs . 22"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_marginTop="2dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:text="Discount"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto_regular"
+                  android:layout_alignParentLeft="true"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                   android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:text="Rs . 20"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+              android:layout_marginTop="2dp"
+                >
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:text="Delivery Charges"
+                    android:textSize="14sp"
+                   android:fontFamily="@font/roboto_regular"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                  android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:text="Rs . 20"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp"
+                >
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:text="Tax and Fees"
+                    android:textSize="14sp"
+                 android:fontFamily="@font/roboto_regular"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                 android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:text="Rs . 22"
+                    android:textSize="14sp"
+                   android:fontFamily="@font/roboto_medium"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="#E9E9E9"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="15dp"
+
+                >
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:text="Grand Total"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+                   android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:text="Rs . 400"
+                  android:fontFamily="@font/roboto_bold"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Btn_Reference"
+                android:textAllCaps="false"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:paddingHorizontal="70dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/white"
+                android:text="View Invoice"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/bg_checkout_btn"
+                >
+
+            </androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/RatingUs"
+                android:layout_marginTop="15dp"
+                android:paddingHorizontal="50dp"
+                android:textAllCaps="false"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:text="Rating Us"
+                android:background="@drawable/bg_checkout_btn"
+                >
+
+            </androidx.appcompat.widget.AppCompatButton>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

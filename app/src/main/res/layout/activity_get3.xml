@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.GetStarted3">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activities.SignUpLogin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:src="@drawable/food"
+                android:scaleType="fitXY"
+                >
+
+            </ImageView>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/SkipBtn"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/btn_bg"
+                android:backgroundTint="@color/white"
+                android:text="Skip"
+                android:textAllCaps="false"
+                android:textColor="@color/Orange"
+                android:layout_width="55dp"
+                android:layout_height="32dp"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="14sp">
+
+            </androidx.appcompat.widget.AppCompatButton>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="@drawable/bg_gestarted"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                >
+
+
+
+                <TextView
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/TxtGet3"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Good Food's"
+                    android:textSize="29sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    >
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/TxtGeto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Fast Delivery"
+                    android:textColor="@color/black"
+                    android:textSize="29sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+
+
+
+
+
+
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#3F434A"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/roboto_light"
+                    android:layout_marginTop="20dp"
+                    android:text="  Reference site about Lorem \nIpsum, giving information on its origins, as"
+                    >
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+
+
+                    <ImageView
+                        android:layout_width="21dp"
+                        android:layout_height="5dp"
+                        android:layout_marginHorizontal="5dp"
+                        android:src="@drawable/greyrect"
+                        >
+
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_width="21dp"
+                        android:layout_height="5dp"
+                        android:src="@drawable/greyrect"
+                        >
+
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_width="21dp"
+                        android:layout_height="5dp"
+                        android:src="@drawable/redrect"
+                        >
+
+                    </ImageView>
+
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton
+
+                    android:id="@+id/ContinueBtn"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:text="Get Started"
+                    android:textColor="@color/white"
+                    android:layout_marginHorizontal="90dp"
+                    android:background="@drawable/btn_bg"
+                    >
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

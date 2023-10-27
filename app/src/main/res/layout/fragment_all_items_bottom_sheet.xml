@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".fragments.AllItemsBottomSheet">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgAllItmBs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/food"
+                app:shapeAppearanceOverlay="@style/FoodStyle2">
+
+            </com.google.android.material.imageview.ShapeableImageView>
+
+            <TextView
+                android:id="@+id/txtDisPer"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 % off"
+                android:background="@drawable/discount_bg"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:paddingVertical="8dp"
+                android:paddingHorizontal="15dp"
+                >
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="Best Seller"
+                android:layout_alignParentBottom="true"
+                android:background="@color/green">
+
+
+                <TextView
+                    android:layout_toRightOf="@+id/txtBestSeller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Best Seller"
+                    android:textSize="14sp"
+                    android:layout_marginHorizontal="2dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/roboto_bold"
+                    />
+
+                <ImageView
+                    android:id="@+id/txtBestSeller"
+                    android:layout_centerVertical="true"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:src="@drawable/best_seller_icon" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imgCross"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:src="@drawable/cross_img"
+                tools:ignore="TouchTargetSizeCheck" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtFNameBs"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/txtBestSeller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cheese Corn Pizza"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto_medium"
+            android:layout_marginHorizontal="15dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/txtFDesBs"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@+id/txtBestSeller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="An epic fusion of paratha and pizza with melting cheese  soft paneer fillings to satisfy all your indulgent cravings"
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginHorizontal="15dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/lightGray"
+
+            />
+
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <LinearLayout
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <LinearLayout
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="15dp"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/txtRateBs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.5"
+                        android:textStyle="bold"
+                        android:textSize="10sp"
+                        android:textColor="@color/black"
+                        android:padding="1dp"
+                        />
+
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/star_icon"
+                        android:layout_marginLeft="5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/txtTotalProBs"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(25+)"
+                        android:textSize="8sp"
+                        android:textColor="@color/lightGray"
+                        android:padding="1dp"
+                        android:layout_marginLeft="5dp"
+                        />
+
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/veg"
+                        android:layout_marginLeft="5dp"
+                        />
+
+
+                </LinearLayout>
+                <TextView
+                    android:paddingVertical="5dp"
+                    android:id="@+id/txtRsBs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Rs 199"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textSize="15sp"
+                    android:textColor="@color/red"
+                    android:textStyle="bold"
+                    android:layout_marginHorizontal="15dp"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_checkout_btn"
+                android:gravity="center"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="10dp"
+                android:text="+ Add"
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</layout>

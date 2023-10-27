@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:background="@color/white"
+    tools:ignore="SpeakableTextPresentCheck">
+<!--    tools:context=".activities.MainActivity"?-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginHorizontal="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/man">
+
+            </ImageView>
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome"
+                    android:textColor="#8B000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    >
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alex Lucifer "
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/Search"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="13dp"
+                android:src="@drawable/search"
+                android:layout_marginLeft="50dp"
+                >
+
+            </ImageView>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="13dp"
+                android:src="@drawable/notification"
+
+                >
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/MyCart"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="13dp"
+                android:src="@drawable/cart"
+
+                >
+
+            </ImageView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/myAddClick"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#2F000000"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/location"
+                >
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:text= "420, AB road, indore, Madhya Pradesh 452010" >
+
+            </TextView>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/group"
+            >
+
+        </ImageView>
+
+         <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           >
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categories"
+            android:textSize="18dp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            >
+
+        </TextView>
+             <TextView
+                 android:id="@+id/CtgAllItm"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="210dp"
+                 android:text="View All"
+                 android:textColor="#8B000000"
+                 android:layout_marginRight="10dp"
+                 android:textSize="14dp"
+                 tools:ignore="TextSizeCheck">
+
+
+             </TextView>
+
+         </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/CtgRecyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Popular Now "
+                android:textSize="18dp"
+                android:layout_marginLeft="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                >
+
+            </TextView>
+            <TextView
+                android:id="@+id/PopAllItm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="187dp"
+                android:singleLine="true"
+                android:text="View All"
+                android:textColor="#8B000000"
+                android:layout_marginRight="15dp"
+                android:textSize="14dp"
+                tools:ignore="TextSizeCheck">
+
+
+            </TextView>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/PopularRecyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        <ImageView
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/tea_img"
+            >
+
+        </ImageView>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Popular Now "
+                android:textSize="18dp"
+                android:layout_marginLeft="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180dp"
+                android:singleLine="true"
+                android:text="View All"
+                android:textColor="#8B000000"
+                android:layout_marginRight="15dp"
+                android:textSize="14dp"
+                tools:ignore="TextSizeCheck">
+
+
+            </TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

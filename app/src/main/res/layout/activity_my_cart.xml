@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".activities.MyCart"
+        android:orientation="vertical">
+
+    <include
+        android:id="@+id/headerMyCart"
+        layout="@layout/custom_toolbar"/>
+
+
+       <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+           android:overScrollMode="never"
+        android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerMyCart"
+                    android:overScrollMode="never"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="60dp"
+                    android:background="@drawable/bg_input"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    >
+
+                    <EditText
+                        android:id="@+id/EdtPromoCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginHorizontal="25dp"
+                        android:layout_weight="2"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:hint="Promo Code"
+                        android:inputType="text"
+                        android:padding="5dp"
+                        android:paddingHorizontal="25dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="#757575"
+                        android:textSize="15sp"
+                        tools:ignore="TouchTargetSizeCheck">
+
+                    </EditText>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/BtnApply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                         android:paddingHorizontal="30dp"
+                        android:background="@drawable/ctg_item_bg"
+                        android:text="Apply"
+                        android:textColor="@color/white"
+                        tools:ignore="TouchTargetSizeCheck">
+
+                    </androidx.appcompat.widget.AppCompatButton>
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    >
+                    <TextView
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Subtotal"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/price_des_txt_color"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/roboto_regular"
+
+                        >
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs. 388"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textColor="@color/price_des_txt_color"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        >
+
+                    </TextView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:orientation="horizontal"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tax and Fees"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/price_des_txt_color"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:layout_alignParentLeft="true"
+                        >
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs. 20"
+                       android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/price_des_txt_color"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/roboto_medium"
+                        >
+
+                    </TextView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:orientation="horizontal"
+                   android:layout_marginTop="10dp"
+                    >
+                    <TextView
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delivery Charges"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/price_des_txt_color"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/roboto_regular"
+
+                        >
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/roboto_medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs. 20"
+                        android:gravity="right"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/price_des_txt_color"
+                        android:textSize="14sp"
+
+                        >
+
+                    </TextView>
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    >
+                    <TextView
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Grand Total"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/price_des_txt_color"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/roboto_medium"
+                        >
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs. 420"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/price_des_txt_color"
+                        android:textSize="16sp"
+                        >
+
+                    </TextView>
+
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/BtnCheckOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:paddingHorizontal="50dp"
+                    android:background="@drawable/bg_checkout_btn"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_marginBottom="40dp"
+                    android:text="CHECKOUT"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+
+    </LinearLayout>

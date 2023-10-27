@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.CompleteYourProfile">
+
+    <include
+        android:id="@+id/txtComplete"
+        layout="@layout/custom_toolbar">
+
+    </include>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgMan"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/man"
+            app:civ_border_width="0dp"
+            />
+
+           <ImageView
+               android:id="@+id/imgCamera"
+               android:background="@drawable/bg_camera"
+               android:layout_marginTop="60dp"
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:padding="8dp"
+               android:src="@drawable/camera"
+               android:layout_alignParentRight="true"
+               >
+
+           </ImageView>
+
+
+    </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/edOrderFor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:hint="Enter your full name"
+            android:inputType="number"
+            android:maxLength="30"
+            app:errorEnabled="true"
+            android:textSize="16sp"
+            android:textColorHint="@color/gray"
+            android:background="@drawable/bg_input"
+            android:paddingHorizontal="25dp"
+            android:layout_gravity="center_vertical"
+            android:foregroundGravity="center_horizontal"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="15dp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:hint="Enter your email"
+            android:inputType="textEmailAddress"
+            android:maxLength="30"
+            app:errorEnabled="true"
+            android:textSize="16sp"
+            android:textColorHint="@color/gray"
+            android:background="@drawable/bg_input"
+            android:paddingHorizontal="25dp"
+            android:layout_gravity="center_vertical"
+            android:foregroundGravity="center_horizontal"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:hint="Enter your mobile number"
+            android:inputType="number"
+            android:maxLength="10"
+            app:errorEnabled="true"
+            android:textSize="16sp"
+            android:textColorHint="@color/gray"
+            android:background="@drawable/bg_input"
+            android:paddingHorizontal="25dp"
+            android:layout_gravity="center_vertical"
+            android:foregroundGravity="center_horizontal"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="15dp"/>
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_input"
+        >
+        <Spinner
+            android:id="@+id/SpnState"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:hint="State"
+            android:inputType="number"
+            android:maxLength="30"
+            app:errorEnabled="true"
+            android:textSize="16sp"
+            android:textColorHint="@color/gray"
+            android:background="@drawable/bg_input"
+            android:paddingHorizontal="25dp"
+            android:layout_gravity="center_vertical"
+            android:foregroundGravity="center_horizontal"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            />
+
+        <ImageView
+            android:layout_marginHorizontal="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/baseline_keyboard_arrow_down_24"
+            >
+
+        </ImageView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_input"
+        >
+        <Spinner
+            android:id="@+id/SpnCity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:hint="City"
+            android:inputType="number"
+            android:maxLength="30"
+            app:errorEnabled="true"
+            android:textSize="16sp"
+            android:textColorHint="@color/gray"
+            android:background="@drawable/bg_input"
+            android:paddingHorizontal="25dp"
+            android:layout_gravity="center_vertical"
+            android:foregroundGravity="center_horizontal"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            />
+
+        <ImageView
+            android:layout_marginHorizontal="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/baseline_keyboard_arrow_down_24"
+            >
+
+        </ImageView>
+
+
+    </RelativeLayout>
+
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:paddingVertical="10dp"
+            android:baselineAligned="false"
+            android:gravity="start"
+            android:hint="Address"
+            android:inputType="number"
+            android:maxLength="60"
+            app:errorEnabled="true"
+            android:textSize="16sp"
+            android:textColorHint="@color/gray"
+            android:background="@drawable/input_bg_rec"
+            android:paddingHorizontal="25dp"
+            android:layout_gravity="center_vertical"
+            android:foregroundGravity="center_horizontal"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="15dp"/>
+
+
+        <Button
+            android:id="@+id/SubmitBtn"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:text="Submit"
+            android:backgroundTint="@color/red"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="100dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/btn_bg"
+            />
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".activities.AllItems">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="15dp"
+        android:background="@drawable/bg_all_itm"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp"
+        android:elevation="5dp"
+        >
+
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:id="@+id/imgBack"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/baseline_arrow_back_ios_new_24"
+
+            >
+
+        </ImageView>
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Items"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+        </TextView>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/search"
+            android:layout_marginLeft="10dp"
+            >
+
+        </ImageView>
+
+    </RelativeLayout>
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginHorizontal="10dp"
+            >
+
+            <RelativeLayout
+                android:layout_marginHorizontal="5dp"
+                android:gravity="center"
+                android:paddingHorizontal="20dp"
+                android:background="@drawable/bg_liner_allitm"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                >
+
+                <ImageView
+                    android:id="@+id/img_filter"
+                    android:layout_centerVertical="true"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/sliders"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img_filter"
+                    android:text="Filters"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginHorizontal="5dp"
+                android:gravity="center"
+                android:paddingHorizontal="20dp"
+                android:background="@drawable/bg_liner_allitm"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                >
+
+                <TextView
+                    android:id="@+id/txtSortBy"
+                    android:layout_centerVertical="true"
+                    android:text="Sort by"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_marginLeft="1dp"
+                    android:id="@+id/img_drop"
+                    android:layout_centerVertical="true"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:layout_toRightOf="@id/txtSortBy"
+                    android:src="@drawable/baseline_keyboard_arrow_down_24"
+                    app:tint="@color/black" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginHorizontal="5dp"
+                android:gravity="center"
+                android:paddingHorizontal="20dp"
+                android:background="@drawable/bg_liner_allitm"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                >
+
+                <TextView
+                    android:layout_marginHorizontal="10dp"
+                    android:id="@+id/txtOffers"
+                    android:layout_centerVertical="true"
+                    android:text="Offers"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+               android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:layout_marginRight="15dp"
+                android:paddingHorizontal="20dp"
+                android:background="@drawable/bg_liner_allitm"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                >
+
+                <TextView
+                    android:layout_marginHorizontal="10dp"
+                    android:id="@+id/txtPureVeg"
+                    android:layout_centerVertical="true"
+                    android:text="Pure Veg"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+    </HorizontalScrollView>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvAllItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                android:id="@+id/spin_kit"
+                android:layout_centerInParent="true"
+                android:layout_width="30dp"
+                style="@style/SpinKitView.Large.DoubleBounce"
+                android:layout_gravity="center"
+                app:SpinKit_Color="@color/green"
+                android:layout_height="30dp"/>
+
+        </RelativeLayout>
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+
+
+</LinearLayout>
+</layout>

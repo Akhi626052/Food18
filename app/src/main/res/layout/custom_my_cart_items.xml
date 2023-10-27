@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/white"
+        android:elevation="4dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/MyCartImg"
+                android:scaleType="centerCrop"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                app:shapeAppearanceOverlay="@style/FoodStyle"
+                android:src="@drawable/food"
+                >
+
+            </com.google.android.material.imageview.ShapeableImageView>
+
+            <LinearLayout
+                android:layout_marginHorizontal="10dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <RelativeLayout
+                    android:layout_marginTop="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    >
+                    <TextView
+                        android:id="@+id/MyCartFName"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:layout_height="wrap_content"
+                        android:text="Cheese Corn Pizza"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_medium"
+                        android:padding="1dp"
+                        >
+
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/imgRemoveItm"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:padding="2dp"
+                        android:src="@drawable/baseline_clear_24"
+                        app:tint="@color/Orange">
+
+                    </ImageView>
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/MyCartExtraF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Extra Cheese Corn"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/extraTxtColor"
+                    android:padding="1dp"
+                    >
+
+                </TextView>
+
+
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+                    >
+                    <TextView
+                        android:layout_alignParentLeft="true"
+                        android:id="@+id/MyCartFPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs 199"
+                        android:textSize="15sp"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:padding="1dp"
+                        >
+
+                    </TextView>
+
+                    <RelativeLayout
+
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_alignParentBottom="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            >
+
+
+                            <ImageView
+                                android:id="@+id/imgMinusItm"
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/minus"
+                                >
+
+                            </ImageView>
+
+                            <TextView
+                                android:id="@+id/TxtNumberItm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="01"
+                                android:textSize="15sp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:padding="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp">
+
+                            </TextView>
+
+                            <ImageView
+                                android:id="@+id/imgPlusItm"
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/plus"
+                                >
+                            </ImageView>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txt_Add_Itm"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/bg_checkout_btn"
+                            android:gravity="center"
+                            android:paddingHorizontal="10dp"
+                            android:text="+ Add"
+                            android:textColor="@color/white"
+                            android:visibility="gone">
+
+                        </TextView>
+
+
+                    </RelativeLayout>
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

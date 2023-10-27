@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.RateUs">
+
+   <include
+       android:id="@+id/txtRateUs"
+       layout="@layout/custom_toolbar"/>
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/LnStatus"
+        android:layout_marginHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/green"
+        android:orientation="vertical"
+        android:elevation="4dp"
+        android:background="@drawable/my_order_shape"
+        >
+
+            <RelativeLayout
+               android:padding="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+
+                >
+                <LinearLayout
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+
+                    >
+                    <TextView
+                        android:id="@+id/orderId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order ID: 5678904"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/white"
+                        >
+                    </TextView>
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:id="@+id/orderDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="25 June ,2023 at 10:10 AM"
+                        android:textSize="8sp"
+                       android:fontFamily="@font/roboto_regular"
+                        android:textColor="@color/white"
+                        >
+                    </TextView>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/ComingFrom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Delivery Completed"
+                    android:textColor="@color/white"
+
+
+                    >
+
+                </TextView>
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:padding="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/my_order_shape"
+                >
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/logo2"
+                    >
+
+                </ImageView>
+
+                <LinearLayout
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:singleLine="true"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Foods 18"
+                        >
+
+                    </TextView>
+                    <TextView
+                        android:layout_marginTop="1dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/lightGray"
+                        android:textSize="12sp"
+                        android:singleLine="true"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Skye,Earth Corporate Park,Ab Road , 605 ,Indore"
+                        >
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+       android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Please Rate Us for our \n Service  "
+        >
+
+    </TextView>
+
+
+    <com.whinc.widget.ratingbar.RatingBar
+        android:layout_marginVertical="20dp"
+        android:id="@+id/ratingBar"
+        android:layout_gravity="center"
+        android:layout_width="230dp"
+        android:layout_height="35dp"
+        app:rb_max_count="5"
+        app:rb_count="4"
+        app:rb_empty="@drawable/blank_star"
+        app:rb_fill="@drawable/favorite"
+        app:rb_space="10dp"
+        app:rb_click_rating="true"
+        app:rb_touch_rating="true"
+        />
+
+
+
+        <EditText
+            android:layout_height="100dp"
+            android:background="@drawable/bg_write_review"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="6dp"
+            android:maxLength="50"
+            android:maxLines="4"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="10dp"
+            android:gravity="start"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="14sp"
+            android:textColorHint="@color/lightGray"
+            android:hint="Write Review"
+            android:minHeight="48dp">
+
+        </EditText>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_checkout_btn"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:paddingHorizontal="80dp"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        >
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+
+</LinearLayout>

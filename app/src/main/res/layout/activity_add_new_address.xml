@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context=".activities.AddNewAddress">
+
+        <include
+            android:id="@+id/Header"
+            layout="@layout/custom_toolbar"/>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="15dp"
+
+            >
+            <Spinner
+                android:id="@+id/SpnState"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="14sp"
+                android:paddingHorizontal="15dp"
+                android:background="@drawable/bg_input"
+                >
+
+            </Spinner>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:src="@drawable/baseline_keyboard_arrow_down_24"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                >
+
+            </ImageView>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="15dp"
+
+            >
+            <Spinner
+                android:id="@+id/SpnCity"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingHorizontal="15dp"
+                android:textSize="14sp"
+                android:background="@drawable/bg_input"
+                >
+
+            </Spinner>
+
+            <ImageView
+                android:id="@+id/imgCitySPn"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:src="@drawable/baseline_keyboard_arrow_down_24"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                >
+
+            </ImageView>
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/edName"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="15dp"
+            android:background="@drawable/bg_input"
+            android:hint="Name"
+            android:paddingHorizontal="20dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:inputType="textCapWords"
+            android:maxLength="20"
+            android:fontFamily="@font/roboto_regular"
+            android:textColorHint="@color/gray">
+
+        </EditText>
+
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/edNumber"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:maxLength="10"
+            android:layout_marginHorizontal="15dp"
+            android:background="@drawable/bg_input"
+            android:hint="Mobile Number"
+            android:paddingHorizontal="20dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray">
+
+        </EditText>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/edAddress"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginHorizontal="15dp"
+            android:background="@drawable/input_bg_rec"
+            android:hint="Address"
+            android:textSize="16sp"
+            android:fontFamily="@font/roboto_regular"
+            android:paddingHorizontal="20dp"
+            android:gravity="start"
+            android:paddingVertical="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:inputType="textCapWords"
+            android:textColorHint="@color/gray">
+
+        </EditText>
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/Btn_Save_Address"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_height="48dp"
+            android:textSize="18sp"
+            android:paddingHorizontal="50dp"
+            android:fontFamily="@font/roboto_medium"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_checkout_btn"
+            android:text="Save Address"
+            android:textColor="@color/white"
+            >
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+
+    </LinearLayout>
+</layout>

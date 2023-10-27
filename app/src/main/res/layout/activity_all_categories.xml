@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#E6FFFFFF"
+    tools:context=".activities.AllCategories">
+
+    <include
+        android:id="@+id/AllCategories"
+        layout="@layout/custom_toolbar"/>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        shimmer:duration="800">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/shimmer_all_categories_layout" />
+            <include layout="@layout/shimmer_all_categories_layout" />
+            <include layout="@layout/shimmer_all_categories_layout" />
+            <include layout="@layout/shimmer_all_categories_layout" />
+            <include layout="@layout/shimmer_all_categories_layout" />
+            <include layout="@layout/shimmer_all_categories_layout" />
+            <include layout="@layout/shimmer_all_categories_layout" />
+            <include layout="@layout/shimmer_all_categories_layout" />
+            <include layout="@layout/shimmer_all_categories_layout" />
+            <include layout="@layout/shimmer_all_categories_layout" />
+            <include layout="@layout/shimmer_all_categories_layout" />
+
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCtgItm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kit_cat"
+        android:layout_centerInParent="true"
+        android:layout_width="30dp"
+        style="@style/SpinKitView.Large.FadingCircle"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/green"
+        android:layout_height="30dp"/>
+
+
+</LinearLayout>
+
+</layout>

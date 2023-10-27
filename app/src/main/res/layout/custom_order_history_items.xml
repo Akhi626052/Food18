@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/LnBgHistory"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+            android:orientation="vertical"
+            android:elevation="4dp"
+            android:background="@drawable/my_order_shape"
+
+            >
+            <RelativeLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+
+                    >
+                    <TextView
+                        android:id="@+id/txtOrderId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order ID: 5678904"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:textColor="@color/white"
+                        >
+                    </TextView>
+
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:id="@+id/txtOrderDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="25 June ,2023 at 10:10 AM"
+                        android:textSize="8sp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textColor="@color/white"
+                        >
+                    </TextView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:fontFamily="@font/roboto_bold"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/TxtOrderPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs 199"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    >
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/my_order_shape"
+                >
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/logo2"
+                        >
+
+                    </ImageView>
+
+                    <LinearLayout
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Foods 18"
+                            >
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/TxtOrderAddress"
+                            android:paddingVertical="3dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#8C8A9D"
+                            android:textSize="12sp"
+                            android:singleLine="true"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="Skye,Earth Corporate Park,Ab Road , 605 ,Indore"
+                            >
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/TxtOrderQty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="3 Items"
+                            >
+
+                        </TextView>
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingHorizontal="10dp"
+                    android:background="@drawable/bg_my_order_2"
+                    >
+
+                    <LinearLayout
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        >
+                        <TextView
+                            android:id="@+id/TxtRating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4.5"
+                            android:layout_gravity="center_vertical"
+                            android:fontFamily="@font/roboto_medium"
+                            android:textSize="10sp"
+                            android:textColor="@color/black"
+                            >
+
+                        </TextView>
+
+                        <ImageView
+
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/star_icon"
+                            >
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/TxtOrderStatus"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Delivery Failed"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            >
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/firelogo"
+                            android:layout_gravity="center_vertical"
+                            >
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/TxtReOrder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Re Order"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/Orange"
+                            android:textSize="12sp"
+                            >
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:padding="10dp"
+                    android:id="@+id/TxtViewDetails"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="12sp"
+                    android:textColor="@color/red"
+                    android:text="View Details"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
+
+
+<!--<LinearLayout-->
+<!--android:id="@+id/LnBgHistory"-->
+<!--android:layout_marginVertical="5dp"-->
+<!--android:layout_marginTop="10dp"-->
+<!--android:layout_marginHorizontal="15dp"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="190dp"-->
+<!--android:backgroundTint="@color/red"-->
+<!--android:orientation="vertical"-->
+<!--android:elevation="4dp"-->
+<!--android:background="@drawable/my_order_shape"-->
+<!--android:weightSum="5"-->
+<!--    >-->
+<!--<LinearLayout-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="0dp"-->
+<!--    android:gravity="center_vertical"-->
+<!--    android:layout_weight="1.3"-->
+<!--    android:orientation="horizontal"-->
+<!--    >-->
+<!--    <LinearLayout-->
+<!--        android:layout_marginHorizontal="10dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:layout_gravity="center_vertical"-->
+<!--        android:weightSum="2"-->
+<!--        >-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:layout_weight="1"-->
+<!--            >-->
+<!--            <TextView-->
+<!--                android:id="@+id/txtOrderId"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Order ID: 5678904"-->
+<!--                android:textSize="12sp"-->
+<!--                android:fontFamily="@font/roboto_bold"-->
+<!--                android:textColor="@color/white"-->
+<!--                >-->
+<!--            </TextView>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txtOrderDate"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="25 June ,2023 at 10:10 AM"-->
+<!--                android:textSize="8sp"-->
+<!--                android:fontFamily="@font/roboto_regular"-->
+<!--                android:textColor="@color/white"-->
+<!--                >-->
+<!--            </TextView>-->
+
+<!--        </LinearLayout>-->
+<!--        <TextView-->
+<!--            android:id="@+id/TxtOrderPrice"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:gravity="right"-->
+<!--            android:text="Rs 199"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textStyle="bold"-->
+
+<!--            >-->
+
+<!--        </TextView>-->
+
+<!--    </LinearLayout>-->
+
+
+
+
+<!--</LinearLayout>-->
+
+<!--<LinearLayout-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="0dp"-->
+<!--    android:layout_weight="3.7"-->
+<!--    android:orientation="vertical"-->
+<!--    android:background="@drawable/my_order_shape"-->
+<!--    >-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_marginHorizontal="10dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        >-->
+
+<!--        <ImageView-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:src="@drawable/logo2"-->
+<!--            >-->
+
+<!--        </ImageView>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:layout_marginHorizontal="10dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            >-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="16sp"-->
+<!--                android:fontFamily="@font/roboto_medium"-->
+<!--                android:text="Foods 18"-->
+<!--                >-->
+
+<!--            </TextView>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/TxtOrderAddress"-->
+<!--                android:paddingVertical="3dp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textColor="#8C8A9D"-->
+<!--                android:textSize="12sp"-->
+<!--                android:singleLine="true"-->
+<!--                android:fontFamily="@font/roboto_regular"-->
+<!--                android:text="Skye,Earth Corporate Park,Ab Road , 605 ,Indore"-->
+<!--                >-->
+
+<!--            </TextView>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/TxtOrderQty"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="12sp"-->
+<!--                android:fontFamily="@font/roboto_regular"-->
+<!--                android:text="3 Items"-->
+<!--                >-->
+
+<!--            </TextView>-->
+
+
+
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:background="@drawable/bg_my_order_2"-->
+<!--        android:weightSum="2"-->
+<!--        >-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_marginHorizontal="10dp"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1.3"-->
+<!--            >-->
+<!--            <TextView-->
+<!--                android:id="@+id/TxtRating"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="4.5"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:fontFamily="@font/roboto_medium"-->
+<!--                android:textSize="10sp"-->
+<!--                android:textColor="@color/black"-->
+<!--                >-->
+
+<!--            </TextView>-->
+
+<!--            <ImageView-->
+
+<!--                android:layout_marginHorizontal="5dp"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:layout_width="10dp"-->
+<!--                android:layout_height="10dp"-->
+<!--                android:src="@drawable/star_icon"-->
+<!--                >-->
+
+<!--            </ImageView>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/TxtOrderStatus"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Delivery Failed"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="12sp"-->
+<!--                >-->
+
+<!--            </TextView>-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_marginHorizontal="10dp"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight=".7"-->
+<!--            android:gravity="right"-->
+<!--            >-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="10dp"-->
+<!--                android:layout_marginHorizontal="5dp"-->
+<!--                android:layout_height="10dp"-->
+<!--                android:src="@drawable/firelogo"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                >-->
+
+<!--            </ImageView>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/TxtReOrder"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Re Order"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="12sp"-->
+<!--                >-->
+
+<!--            </TextView>-->
+<!--        </LinearLayout>-->
+<!--    </LinearLayout>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/TxtViewDetails"-->
+<!--        android:layout_weight="1"-->
+<!--        android:fontFamily="@font/roboto_medium"-->
+<!--        android:textSize="12sp"-->
+<!--        android:textColor="@color/red"-->
+<!--        android:text="View Details"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        >-->
+
+<!--    </TextView>-->
+
+
+<!--</LinearLayout>-->
+
+
+<!--</LinearLayout>-->

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.FragmentHome">
+
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgUser"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/man"
+                    tools:ignore="RtlHardcoded">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <LinearLayout
+                    android:layout_toRightOf="@+id/imgUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                     android:padding="5dp"
+                     android:layout_marginHorizontal="5dp"
+                    tools:ignore="RtlHardcoded">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Welcome"
+                        android:textColor="@color/gray"
+                        android:textSize="16sp"
+                       android:fontFamily="@font/roboto_regular"
+                        tools:ignore="HardcodedText">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alex Lucifer "
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_medium"
+                        >
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@+id/imgNotify"
+                    android:id="@+id/Search"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/search"
+                    tools:ignore="ContentDescription">
+
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/imgNotify"
+                    android:layout_centerVertical="true"
+                  android:layout_alignParentRight="true"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/notification"
+                    app:tint="@color/black">
+
+                </ImageView>
+
+
+            </RelativeLayout>
+
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:paddingHorizontal="15dp"
+                android:id="@+id/myAddClick"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#2F000000"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:id="@+id/imgLocation"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/location"
+                    >
+
+                </ImageView>
+
+                <TextView
+                    android:layout_toRightOf="@+id/imgLocation"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textSize="14sp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:text= "420, AB road, indore, Madhya Pradesh 452010" >
+
+                </TextView>
+
+            </RelativeLayout>
+
+
+      <androidx.cardview.widget.CardView
+           android:layout_marginTop="10dp"
+           android:layout_width="match_parent"
+          android:layout_marginHorizontal="15dp"
+          app:cardCornerRadius="10dp"
+          android:elevation="5dp"
+          android:layout_height="160dp">
+           <com.denzcoskun.imageslider.ImageSlider
+             android:id="@+id/image_slider"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             app:iss_auto_cycle="true"
+             app:iss_period="1000"
+             app:iss_no_dots="false"
+             android:scaleType="fitXY"
+             app:iss_delay="1000"
+             app:iss_error_image="@drawable/group"
+             app:iss_placeholder="@drawable/group" />
+
+              </androidx.cardview.widget.CardView>
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="15dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Categories"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    tools:ignore="TextSizeCheck">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/CtgAllItm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="View All"
+                    android:textColor="@color/extraTxtColor"
+                    android:textSize="14dp"
+                    tools:ignore="TextSizeCheck">
+
+                </TextView>
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/CtgRecyclerview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="10dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="15dp"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Popular Now "
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/PopAllItm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View All"
+                    android:textColor="@color/extraTxtColor"
+                    android:textSize="14dp"
+                    tools:ignore="TextSizeCheck"/>
+
+
+            </RelativeLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="10dp"
+                android:id="@+id/PopularRecyclerview"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:nestedScrollingEnabled="false"
+                >
+<!--  If you want to show less data here you can fix it by height  500 dp Approximately-->
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="15dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:layout_height="160dp">
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/image_slider2"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                app:iss_auto_cycle="true"
+                app:iss_period="1000"
+                app:iss_no_dots="false"
+                android:scaleType="fitXY"
+                app:iss_delay="1000"
+                app:iss_error_image="@drawable/group"
+                app:iss_placeholder="@drawable/group"
+                android:layout_marginBottom="20dp"
+                app:iss_text_align="CENTER"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="15dp"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Normal Products"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <TextView
+                    android:id="@+id/txtNormalViewAll"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View All"
+                    android:textColor="@color/extraTxtColor"
+                    android:textSize="14dp"
+                    tools:ignore="TextSizeCheck"/>
+
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="10dp"
+                android:id="@+id/rvNormalProducts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+
+                >
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
+</layout>

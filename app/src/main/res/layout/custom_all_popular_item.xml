@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginHorizontal="15dp"
+        app:cardUseCompatPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="@color/white"
+        >
+
+        <LinearLayout
+            android:id="@+id/lnProduct"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                >
+                <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgFood"
+                android:scaleType="centerCrop"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                app:shapeAppearanceOverlay="@style/FoodStyle"
+                android:src="@drawable/food"
+                >
+            </com.google.android.material.imageview.ShapeableImageView>
+
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 % off"
+                    android:background="@drawable/discount_bg"
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:paddingVertical="4dp"
+                    android:paddingHorizontal="10dp"
+                    >
+                </TextView>
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="center"
+                    android:text="Best Seller"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/best_seller_bg">
+
+
+                <TextView
+                 android:layout_toRightOf="@+id/txtBestSeller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Best Seller"
+                    android:textSize="10sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/txtBestSeller"
+                    android:layout_centerVertical="true"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/best_seller_icon" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/txtFName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cheese Corn Pizza"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto_medium"
+                    android:padding="1dp"
+                    android:layout_marginLeft="10dp"
+                 />
+
+                <TextView
+                    android:id="@+id/txtExtraFName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Extra Cheese Corn"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/lightGray"
+                    android:padding="1dp"
+                    android:layout_marginLeft="10dp"
+                />
+
+                <LinearLayout
+                    android:layout_marginTop="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/txtRate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.5"
+                        android:textStyle="bold"
+                        android:textSize="10sp"
+                        android:textColor="@color/black"
+                        android:padding="1dp"
+                        android:layout_marginLeft="10dp"
+                    />
+
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/star_icon"
+                        android:layout_marginLeft="5dp"
+                     />
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(25+)"
+                        android:textSize="8sp"
+                        android:textColor="#8B000000"
+                        android:padding="1dp"
+                        android:layout_marginLeft="5dp"
+                   />
+
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/veg"
+                        android:layout_marginLeft="5dp"
+                   />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+
+                    >
+                    <RelativeLayout
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+
+                        <TextView
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:id="@+id/txtRs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rs 199"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:textSize="15sp"
+                            android:textColor="@color/red"
+                            android:textStyle="bold"
+                            />
+
+                        <RelativeLayout
+                            android:id="@+id/rlPlusMinusBtn"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginVertical="7dp"
+                            android:gravity="center_vertical"
+                            >
+                            <ImageView
+                                android:layout_toLeftOf="@+id/txtOrdQty"
+                                android:id="@+id/imgMinusItm"
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/minus"
+                                >
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_toLeftOf="@+id/imgPlusItm"
+                                android:id="@+id/txtOrdQty"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1"
+                                android:layout_centerVertical="true"
+                                android:textSize="15sp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                android:padding="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp">
+
+                            </TextView>
+
+                            <ImageView
+                                android:layout_alignParentRight="true"
+                                android:id="@+id/imgPlusItm"
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/plus"
+                                >
+                            </ImageView>
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/txtBtnAdd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/bg_checkout_btn"
+                            android:gravity="center"
+                            android:paddingHorizontal="20dp"
+                            android:text="+ Add"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.GetStarted2">
+
+    <!--&lt;!&ndash;     <com.github.appintro.AppIntroViewPager&ndash;&gt;-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activities.SignUpLogin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:src="@drawable/food3"
+                android:scaleType="centerCrop"
+                >
+
+            </ImageView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/SkipBtn"
+                android:layout_width="55dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/btn_bg"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Skip"
+                android:textAllCaps="false"
+                android:textColor="@color/Orange"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck">
+
+            </androidx.appcompat.widget.AppCompatButton>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/bg_gestarted"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/TxtGet2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:text="Good Food's"
+                    android:textColor="@color/black"
+                    android:textSize="29sp"
+                    android:fontFamily="@font/roboto_bold">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/TxtGeto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Fast Delivery"
+                    android:textColor="@color/black"
+                    android:textSize="29sp"
+                    android:fontFamily="@font/roboto_bold">
+
+                </TextView>
+
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="  Reference site about Lorem \nIpsum, giving information on its origins, as"
+                    android:textColor="#3F434A"
+                    android:fontFamily="@font/roboto_light"
+                    android:textSize="16sp">
+
+                </TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="21dp"
+                        android:layout_height="5dp"
+                        android:layout_marginHorizontal="5dp"
+                        android:src="@drawable/greyrect">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_width="21dp"
+                        android:layout_height="5dp"
+                        android:layout_marginHorizontal="5dp"
+                        android:src="@drawable/redrect">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_width="21dp"
+                        android:layout_height="5dp"
+                        android:layout_marginHorizontal="5dp"
+                        android:src="@drawable/greyrect">
+
+                    </ImageView>
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                  android:layout_gravity="center"
+                    android:id="@+id/ContinueBtn"
+                    android:layout_width="212dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/btn_bg"
+                    android:text="Next"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18sp">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

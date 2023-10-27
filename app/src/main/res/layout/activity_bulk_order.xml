@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.BulkOrder">
+
+
+    <include
+        android:id="@+id/txtBulOrder"
+        layout="@layout/custom_toolbar">
+
+    </include>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+
+    <EditText
+        android:id="@+id/edOrderFor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:hint="Order For(Birthday , Event etc.)"
+        android:inputType="textCapWords"
+        android:maxLength="20"
+        app:errorEnabled="true"
+        android:textSize="16sp"
+        android:textColorHint="@color/gray"
+        android:background="@drawable/bg_input"
+        android:paddingHorizontal="25dp"
+        android:layout_gravity="center_vertical"
+        android:foregroundGravity="center_horizontal"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"/>
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_input"
+        >
+        <EditText
+            android:id="@+id/edDatePicker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:hint="Date"
+            android:inputType="date"
+            android:maxLength="30"
+            app:errorEnabled="true"
+            android:textSize="16sp"
+            android:textColorHint="@color/gray"
+            android:background="@drawable/bg_input"
+            android:paddingHorizontal="25dp"
+            android:layout_gravity="center_vertical"
+            android:foregroundGravity="center_horizontal"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            />
+
+        <ImageView
+            android:id="@+id/imgDatePicker"
+            android:layout_marginHorizontal="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/time_picker_img"
+            >
+
+        </ImageView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_input"
+        >
+        <EditText
+            android:id="@+id/edTimePicker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:gravity="center_vertical"
+            android:hint="Time"
+            android:inputType="number"
+            android:maxLength="30"
+            app:errorEnabled="true"
+            android:textSize="16sp"
+            android:textColorHint="@color/gray"
+            android:background="@drawable/bg_input"
+            android:paddingHorizontal="25dp"
+            android:layout_gravity="center_vertical"
+            android:foregroundGravity="center_horizontal"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            />
+
+        <ImageView
+            android:id="@+id/imgTimePicker"
+            android:layout_marginHorizontal="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/clock_img"
+            >
+
+        </ImageView>
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:hint="Full Name"
+        android:inputType="textCapWords"
+        android:maxLength="30"
+        app:errorEnabled="true"
+        android:textSize="16sp"
+        android:textColorHint="@color/gray"
+        android:background="@drawable/bg_input"
+        android:paddingHorizontal="25dp"
+        android:layout_gravity="center_vertical"
+        android:foregroundGravity="center_horizontal"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:hint="No. Of People"
+        android:inputType="number"
+        android:maxLength="5"
+        app:errorEnabled="true"
+        android:textSize="16sp"
+        android:textColorHint="@color/gray"
+        android:background="@drawable/bg_input"
+        android:paddingHorizontal="25dp"
+        android:layout_gravity="center_vertical"
+        android:foregroundGravity="center_horizontal"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:hint="Contact No."
+        android:inputType="number"
+        android:maxLength="10"
+        app:errorEnabled="true"
+        android:textSize="16sp"
+        android:textColorHint="@color/gray"
+        android:background="@drawable/bg_input"
+        android:paddingHorizontal="25dp"
+        android:layout_gravity="center_vertical"
+        android:foregroundGravity="center_horizontal"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingVertical="10dp"
+        android:baselineAligned="false"
+        android:gravity="start"
+        android:hint="Address"
+        android:inputType="text"
+        android:maxLength="30"
+        app:errorEnabled="true"
+        android:textSize="16sp"
+        android:textColorHint="@color/gray"
+        android:background="@drawable/input_bg_rec"
+        android:paddingHorizontal="25dp"
+        android:layout_gravity="center_vertical"
+        android:foregroundGravity="center_horizontal"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="15dp"/>
+
+
+    <Button
+        android:id="@+id/SubmitBtn"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:text="Submit"
+        android:fontFamily="@font/roboto_medium"
+        android:backgroundTint="@color/red"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="100dp"
+        android:background="@drawable/btn_bg"
+
+        />
+
+
+            <TextView
+                android:visibility="invisible"
+                android:layout_marginBottom="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                >
+
+            </TextView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

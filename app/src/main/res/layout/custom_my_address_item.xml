@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/CardAddress"
+       android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/bg_my_address"
+        android:elevation="4dp"
+        >
+
+        <RelativeLayout
+            android:layout_marginHorizontal="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+
+
+            >
+            <TextView
+               android:gravity="center_vertical"
+                android:id="@+id/txtUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" Daizzy Info System"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:fontFamily="@font/roboto_medium"
+                >
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/Img_DeleteAdd"
+               android:layout_alignParentRight="true"
+                android:padding="4dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/bin"
+                >
+
+            </ImageView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginHorizontal="5dp"
+            android:id="@+id/txtAddress"
+            android:textColor="@color/lightGray"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Skye Earth Corporate Park, 605 , AB Road , "
+            >
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_marginHorizontal="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/txtDistrict"
+                android:textColor="@color/lightGray"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indore , "
+                >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtState"
+                android:textColor="@color/lightGray"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Madhya Pradesh  452010"
+                >
+
+            </TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtMobNum"
+            android:layout_marginHorizontal="5dp"
+            android:textColor="@color/lightGray"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" +91 912 345 6789"
+            >
+
+        </TextView>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

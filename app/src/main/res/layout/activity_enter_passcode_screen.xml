@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activities.EnterPasscodeScreen">
+
+        <include
+            android:id="@+id/TxtHeaderPasscode"
+            layout="@layout/custom_toolbar">
+
+        </include>
+
+        <ImageView
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/pincode"
+            >
+
+        </ImageView>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/black"
+            android:text="Enter your passcode"
+            />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/black"
+            android:text="Please enter your 4 digit passcode"
+            />
+
+
+        <com.goodiebag.pinview.Pinview
+            android:layout_marginTop="20dp"
+            android:id="@+id/pin_viewPAss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cursorVisible="true"
+            app:forceKeyboard="false"
+            app:hint="0"
+            app:inputType="number"
+            app:password="true"
+            app:pinBackground="@drawable/pin_view_selector"
+            app:pinHeight="50dp"
+            app:pinLength="4"
+            app:pinWidth="50dp" />
+
+
+        <Button
+            android:id="@+id/SubmitBtn"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:text="Submit"
+            android:fontFamily="@font/roboto_medium"
+            android:backgroundTint="@color/red"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="100dp"
+            android:background="@drawable/btn_bg"
+            />
+
+        <TextView
+            android:id="@+id/txtForgetPass"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/black"
+            android:text="Forgot passcode?"
+            />
+
+    </LinearLayout>
+</layout>
+
